@@ -13,17 +13,23 @@
 		<a href="#" data-activates="nav-mobile" class="button-collapse primary-text  "><i class="material-icons waves-effect waves-pink circle">menu</i></a>
 	</div>
   <ul id="nav-mobile" class="side-nav">
-  	<li class="waves-effect waves-pink"><router-link class="primary-text" to="/">About</router-link></li>
-  	<li class="waves-effect waves-pink"><router-link class="primary-text" to="/data">Data</router-link></li>
-  	<li class="waves-effect waves-pink"><router-link class="primary-text" to="/documentation">Documentation</router-link></li>
-  	<li class="waves-effect waves-pink"><router-link class="primary-text" to="/configure">Configure</router-link></li>
-  	<li class="waves-effect waves-pink"><router-link class="primary-text" to="/add">Add</router-link></li>
+  	<li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/">About</router-link></li>
+  	<li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/data">Data</router-link></li>
+  	<li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/documentation">Documentation</router-link></li>
+  	<li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/configure">Configure</router-link></li>
+  	<li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/add">Add</router-link></li>
   </ul>
 </nav>
 </template>
 
 <script>
 export default {
-  name: 'nav-bar'
+  name: 'nav-bar',
+  methods:{
+    closeNav(){
+      console.log('closing')
+      $().sideNav('hide');
+    }
+  }
 }
 </script>
