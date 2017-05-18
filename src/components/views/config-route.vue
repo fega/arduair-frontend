@@ -1,8 +1,8 @@
 <template>
   <div id="configure" class="">
-    <page-title>Configure
+    <!-- <page-title>Configure
       <p slot="description">Please add a device name and password to configure it</p>
-    </page-title>
+    </page-title> -->
   <section>
     <form action="/config" method="POST" id="config-search-form">
       <br>
@@ -13,7 +13,7 @@
         </mz-row>
       </div>
       <mz-row>
-        <div class="col s12 m12	l12 center">
+        <div class="col s12 center">
           <input id="config-search-btn" type="submit" value="Search device" class="waves-teal btn btn-flat primary" form="config-search-form">
         </div>
       </mz-row>

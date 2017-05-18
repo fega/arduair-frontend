@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-title>Data Collection</page-title>
+    <!-- <page-title>Data Collection</page-title> -->
     <mz-container>
       <mz-row>
         <!-- <input-text icon="search" name="search" label="Search" cols="s12 m6"></input-text> -->
@@ -11,15 +11,15 @@
         </div>
         <mz-col cols="s6 m3">
           <br>
-          <a class="btn btn-flat primary">Buscar</a>
+          <a class="btn btn-flat primary">Search</a>
         </mz-col>
         <mz-col cols="s6 m3 left">
           <br>
-          <a class="btn btn-flat right">Update List</a>
+          <a class="btn btn-flat right" @click="$emit('update')">Update List</a>
         </mz-col>
       </mz-row>
-      <device-list :devices="deviceList" :filter="search"></device-list>
     </mz-container>
+    <device-list :devices="deviceList" :filter="search"></device-list>
   </div>
 </template>
 

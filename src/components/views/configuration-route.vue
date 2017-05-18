@@ -1,7 +1,7 @@
 
 <template lang="html">
   <div id="config-device-found">
-    <page-title>Configure device</page-title>
+    <!-- <page-title>Configure device</page-title> -->
     <section>
       <mz-container>
         <form action="/api/demotest1/demodemo/config" method="post" id="config-device-founded-form">

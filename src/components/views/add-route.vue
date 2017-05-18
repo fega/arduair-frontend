@@ -1,13 +1,13 @@
 <template>
   <div id="add" class="">
-    <page-title>Add new device
+    <!-- <page-title>Add new device
       <p slot="description">Please fill the following information</p>
-    </page-title>
+    </page-title> -->
 
     <section>
       <br>
       <div class="container">
-        <form action="/device" method="POST" id="addform">
+        <form action="/device" method="POST" id="addform" v-ajax>
           <mz-row>
             <input-text cols="s12 m6" icon="settings_remote" name="device" required label="Device name"></input-text>
             <input-text cols="s12 m6" icon="remove_red_eye" name="password" required label="Device password" type="password"></input-text>
@@ -18,7 +18,7 @@
           </mz-row>
             <mz-row>
               <div class="col s12 m12	l12 center">
-                <input id="config-search-btn" type="submit" value="Add device" class="waves-teal btn btn-flat primary" form="config-search-form">
+                <input type="submit" value="Add device" class="waves-teal btn btn-flat primary">
               </div>
             </mz-row>
           </form>
@@ -48,9 +48,10 @@ import mzContainer from '@/components/materialize/mz-container.vue'
 import mzCol from '@/components/materialize/mz-col.vue'
 import pageTitle from '@/components/page-title.vue'
 import inputText from '@/components/forms/input-text'
+import vAjax from '@/components/directives/ajax.js'
 export default {
   name: 'docs-route',
-  components: { inputText, pageTitle,mzRow }
+  components: { inputText, pageTitle,mzRow, vAjax }
 }
 </script>
 
