@@ -35,49 +35,65 @@
   <!-- PAGE CARDS -->
   <section class="container">
     <mz-row>
+      <!-- CARD -->
   		<mz-col cols="s12 m6 l4">
-        <a href="#">
-        <transition name="slide-fade" mode="out-in" enter-active-class="s-1" appear>
-            <mz-card image="http://marketingland.com/wp-content/ml-loads/2015/01/analytics-marketing-data-technology-ss-1920.jpg" title="Explore the data" link="Explore" linkUrl="#" class="small">
-              <p>Search and explore the stored data</p>
+        <router-link to="/data">
+          <transition name="slide-fade" mode="out-in" enter-active-class="s-1" appear>
+              <mz-card image="http://marketingland.com/wp-content/ml-loads/2015/01/analytics-marketing-data-technology-ss-1920.jpg" title="Explore the data" link="Explore" linkUrl="#" class="small">
+                <p>Search and explore the stored data</p>
+              </mz-card>
+          </transition>
+        </router-link>
+  		</mz-col>
+      <!-- CARD2 -->
+      <mz-col cols="s12 m6 l4">
+        <router-link to="/documentation">
+          <transition name="slide-fade" mode="out-in" enter-active-class="s-2" appear>
+            <mz-card image="https://cdn-az.allevents.in/banners/aa5309dbd303169235ad1b64feddef76" title="Read the documentation" link="Read" linkUrl="#" class="small">
+              <p>Learn how to use the Arduair device</p>
             </mz-card>
-        </transition>
+          </transition>
+        </router-link>
+  		</mz-col>
+      <!-- CARD3 -->
+      <mz-col cols="s12 m6 l4">
+        <a href="https://github.com/fega/arduair">
+          <transition name="slide-fade" mode="out-in" enter-active-class="s-3" appear>
+            <mz-card image="https://lh3.googleusercontent.com/zp6oZozh_eYoCXApAy70NDYIv1-PMxqcALpXmFrctdPMPEXtl4GBF7aMSOEczK6mnyQudR-6EpHGcWi1-SQk8wJ7L2rOhUm9--D_GincvlYJ6WcJWlo_ez2DWBF7Xf2GQTXtwUcprDDHezA692cr7S2QcuFdA-7jeGo5UjcxzTvoyhgQPR0tPjQQ15lI8T7F7S0E_LULmTQNh_gKmYByZHlB1tjAulL8jJPLkWtokjOCFSsovVOhENx7OaLyqeBIhzDIUS-SLWVNIHhJgaN0h-S-vSgleoun8kJnc5f3G7fWvMUdKvp6ZqFFR2VMd2STdFVRlqJMdvFOf4Es9A11ghSrbLMVpEQS423CGu88Dvjut-DG4b8vukLDTOhQtFFJsX8N2Q-nW5fHVRU-aXhm_nbxnJC0pvyL0QP87noJ6EXyYu9AsnylKa99_eAI9tbd7QuFkwXsQJrPDPCvv2LKeKqtAT81OxapTyhqfRkuxrs_39WS9NaLU-GNIl1rnHCPoLTy7XqSWNScKG1ESCcso_jJEAy2HDhr-PCxjHQa2uRqc6tImrmIekQ_PGc1PrDREWh40pVBvnKVOcijfx4namYseFeuci0Wm7ErvOoxHlgobaoG0jt06vLn0HmNY40YnLRfQTmIXI-z9UciqjCEE0xpKok_YQE-P-7ot-gwvUU=w1267-h950-no" title="Build an ArduAir device" link="Build" linkUrl="#" class="small">
+              <p>Learn how to build your own Arduair</p>
+            </mz-card>
+          </transition>
         </a>
   		</mz-col>
+      <!-- CARD4 -->
       <mz-col cols="s12 m6 l4">
-        <transition name="slide-fade" mode="out-in" enter-active-class="s-2" appear>
-          <mz-card image="https://cdn-az.allevents.in/banners/aa5309dbd303169235ad1b64feddef76" title="Read the documentation" link="Read" linkUrl="#" class="small">
-            <p>Learn how to use the Arduair device</p>
-          </mz-card>
-        </transition>
+        <a href="https://github.com/fega/arduair/blob/master/docs/build-an-Arduair-device.md">
+          <transition name="slide-fade" mode="out-in" enter-active-class="s-4" appear>
+            <mz-card image="https://lh3.googleusercontent.com/zp6oZozh_eYoCXApAy70NDYIv1-PMxqcALpXmFrctdPMPEXtl4GBF7aMSOEczK6mnyQudR-6EpHGcWi1-SQk8wJ7L2rOhUm9--D_GincvlYJ6WcJWlo_ez2DWBF7Xf2GQTXtwUcprDDHezA692cr7S2QcuFdA-7jeGo5UjcxzTvoyhgQPR0tPjQQ15lI8T7F7S0E_LULmTQNh_gKmYByZHlB1tjAulL8jJPLkWtokjOCFSsovVOhENx7OaLyqeBIhzDIUS-SLWVNIHhJgaN0h-S-vSgleoun8kJnc5f3G7fWvMUdKvp6ZqFFR2VMd2STdFVRlqJMdvFOf4Es9A11ghSrbLMVpEQS423CGu88Dvjut-DG4b8vukLDTOhQtFFJsX8N2Q-nW5fHVRU-aXhm_nbxnJC0pvyL0QP87noJ6EXyYu9AsnylKa99_eAI9tbd7QuFkwXsQJrPDPCvv2LKeKqtAT81OxapTyhqfRkuxrs_39WS9NaLU-GNIl1rnHCPoLTy7XqSWNScKG1ESCcso_jJEAy2HDhr-PCxjHQa2uRqc6tImrmIekQ_PGc1PrDREWh40pVBvnKVOcijfx4namYseFeuci0Wm7ErvOoxHlgobaoG0jt06vLn0HmNY40YnLRfQTmIXI-z9UciqjCEE0xpKok_YQE-P-7ot-gwvUU=w1267-h950-no" title="About the project" link="Read" linkUrl="#" class="small">
+              <p>Read about the project</p>
+            </mz-card>
+          </transition>
+        </a>
   		</mz-col>
+      <!-- CARD5 -->
       <mz-col cols="s12 m6 l4">
-        <transition name="slide-fade" mode="out-in" enter-active-class="s-3" appear>
-          <mz-card image="https://lh3.googleusercontent.com/zp6oZozh_eYoCXApAy70NDYIv1-PMxqcALpXmFrctdPMPEXtl4GBF7aMSOEczK6mnyQudR-6EpHGcWi1-SQk8wJ7L2rOhUm9--D_GincvlYJ6WcJWlo_ez2DWBF7Xf2GQTXtwUcprDDHezA692cr7S2QcuFdA-7jeGo5UjcxzTvoyhgQPR0tPjQQ15lI8T7F7S0E_LULmTQNh_gKmYByZHlB1tjAulL8jJPLkWtokjOCFSsovVOhENx7OaLyqeBIhzDIUS-SLWVNIHhJgaN0h-S-vSgleoun8kJnc5f3G7fWvMUdKvp6ZqFFR2VMd2STdFVRlqJMdvFOf4Es9A11ghSrbLMVpEQS423CGu88Dvjut-DG4b8vukLDTOhQtFFJsX8N2Q-nW5fHVRU-aXhm_nbxnJC0pvyL0QP87noJ6EXyYu9AsnylKa99_eAI9tbd7QuFkwXsQJrPDPCvv2LKeKqtAT81OxapTyhqfRkuxrs_39WS9NaLU-GNIl1rnHCPoLTy7XqSWNScKG1ESCcso_jJEAy2HDhr-PCxjHQa2uRqc6tImrmIekQ_PGc1PrDREWh40pVBvnKVOcijfx4namYseFeuci0Wm7ErvOoxHlgobaoG0jt06vLn0HmNY40YnLRfQTmIXI-z9UciqjCEE0xpKok_YQE-P-7ot-gwvUU=w1267-h950-no" title="Build an ArduAir device" link="Build" linkUrl="#" class="small">
-            <p>Learn how to build your own Arduair</p>
-          </mz-card>
-        </transition>
-  		</mz-col>
-      <mz-col cols="s12 m6 l4">
-        <transition name="slide-fade" mode="out-in" enter-active-class="s-4" appear>
-          <mz-card image="https://lh3.googleusercontent.com/zp6oZozh_eYoCXApAy70NDYIv1-PMxqcALpXmFrctdPMPEXtl4GBF7aMSOEczK6mnyQudR-6EpHGcWi1-SQk8wJ7L2rOhUm9--D_GincvlYJ6WcJWlo_ez2DWBF7Xf2GQTXtwUcprDDHezA692cr7S2QcuFdA-7jeGo5UjcxzTvoyhgQPR0tPjQQ15lI8T7F7S0E_LULmTQNh_gKmYByZHlB1tjAulL8jJPLkWtokjOCFSsovVOhENx7OaLyqeBIhzDIUS-SLWVNIHhJgaN0h-S-vSgleoun8kJnc5f3G7fWvMUdKvp6ZqFFR2VMd2STdFVRlqJMdvFOf4Es9A11ghSrbLMVpEQS423CGu88Dvjut-DG4b8vukLDTOhQtFFJsX8N2Q-nW5fHVRU-aXhm_nbxnJC0pvyL0QP87noJ6EXyYu9AsnylKa99_eAI9tbd7QuFkwXsQJrPDPCvv2LKeKqtAT81OxapTyhqfRkuxrs_39WS9NaLU-GNIl1rnHCPoLTy7XqSWNScKG1ESCcso_jJEAy2HDhr-PCxjHQa2uRqc6tImrmIekQ_PGc1PrDREWh40pVBvnKVOcijfx4namYseFeuci0Wm7ErvOoxHlgobaoG0jt06vLn0HmNY40YnLRfQTmIXI-z9UciqjCEE0xpKok_YQE-P-7ot-gwvUU=w1267-h950-no" title="About the project" link="Read" linkUrl="#" class="small">
-            <p>Read about the project</p>
-          </mz-card>
-        </transition>
-  		</mz-col>
-      <mz-col cols="s12 m6 l4">
+        <a href="https://github.com/fega/arduair">
         <transition name="slide-fade" mode="out-in" enter-active-class="s-5" appear>
           <mz-card image="https://img.gawkerassets.com/img/18efmtxt7i5nvjpg/original.jpg" title="GitHub" link="Go to github" linkUrl="#" class="small">
             <p>See the GitHub repository</p>
           </mz-card>
         </transition>
+        </a>
   		</mz-col>
+      <!-- CARD6 -->
       <mz-col cols="s12 m6 l4">
+        <a href="https://www.upb.edu.co/es/la-universidad">
         <transition name="slide-fade" mode="out-in" enter-active-class="s-6" appear>
           <mz-card image="http://images.paginasamarillas.com/283728/262725/animation/1.jpg" title="About UPB" link="Read  " linkUrl="#" class="small">
             <p>Read about the "Universidad pontificia bolivariana"</p>
           </mz-card>
         </transition>
+        </a>
   		</mz-col>
   	</mz-row>
   </section>

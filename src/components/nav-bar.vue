@@ -9,14 +9,14 @@
               <span class="accent-text" key="1" v-if="$route.path === '/configure' ">Configure device</span>
               <span class="accent-text" key="2" v-else-if="$route.path === '/add' ">Add device</span>
               <span class="accent-text" key="3" v-else-if="$route.path === '/data' ">Data</span>
-              <object v-else type="image/svg+xml" data="http://arduair.herokuapp.com//img/arduair-logo.svg" height="40" style="margin-top:8px"><img height="40" src="/img/arduair-logo.png" alt="GPS tracker Logo" ></object>
+              <object v-else type="image/svg+xml" data="/static/arduair-logo.svg" height="40" style="margin-top:4px"><img height="40" src="/static/arduair-logo.png" alt="Arduair Project" ></object>
             </transition>
           </router-link>
           <!-- LINKS -->
       		<ul class="right hide-on-med-and-down">
       			<li><router-link class="primary-text waves-effect waves-pink" to="/">About</router-link></li>
       			<li><router-link class="accent-text waves-effect waves-pink" to="/data">Data</router-link></li>
-      			<li><router-link class="primary-text waves-effect waves-pink" to="/documentation">Documentation</router-link></li>
+      			<li><router-link class="primary-text waves-effect waves-pink" to="/documentation">Manual</router-link></li>
       			<li><router-link class="primary-text waves-effect waves-pink" to="/configure">Configure</router-link></li>
       			<li><router-link class="primary-text waves-effect waves-pink" to="/add">Add</router-link></li>
             <li><router-link class="primary-text waves-effect waves-pink" to="/add">Source Code</router-link></li>
@@ -32,7 +32,7 @@
       <ul id="nav-mobile" class="side-nav">
         <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/">About</router-link></li>
         <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/data">Data</router-link></li>
-        <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/documentation">Documentation</router-link></li>
+        <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/documentation">Manual</router-link></li>
         <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/configure">Configure</router-link></li>
         <li @click="closeNav()" class="waves-effect waves-pink"><router-link class="primary-text" to="/add">Add</router-link></li>
       </ul>

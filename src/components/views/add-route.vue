@@ -1,9 +1,5 @@
 <template>
   <div id="add" class="">
-    <!-- <page-title>Add new device
-      <p slot="description">Please fill the following information</p>
-    </page-title> -->
-
     <section>
       <br>
       <div class="container">

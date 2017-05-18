@@ -6,11 +6,13 @@ import dataRoute from '@/components/views/data-route.vue'
 import addRoute from '@/components/views/add-route.vue'
 import configRoute from '@/components/views/config-route.vue'
 import configurationRoute from '@/components/views/configuration-route.vue'
+import explorerRoute from '@/components/views/data-explorer-route.vue'
 Vue.use(Router)
 
 const routes = [
   { path: '/', component: mainRoute },
   { path: '/data', component: dataRoute },
+  { path: '/explorer', component: explorerRoute },
   { path: '/documentation', component: docsRoute },
   { path: '/configure', component: configRoute },
   { path: '/configuration', component: configurationRoute },
